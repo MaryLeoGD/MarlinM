@@ -46,9 +46,9 @@
   #define POWER_LOSS_ZRAISE 2
 #endif
 
-//#define DEBUG_POWER_LOSS_RECOVERY
-//#define SAVE_EACH_CMD_MODE
-//#define SAVE_INFO_INTERVAL_MS 0
+//#define DEBUG_POWER_LOSS_RECOVERY  //mary enable ?
+//#define SAVE_EACH_CMD_MODE         //mary enable ?
+//#define SAVE_INFO_INTERVAL_MS 0    //mary enable ?
 
 typedef struct {
   uint8_t valid_head;
