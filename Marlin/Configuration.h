@@ -1103,7 +1103,7 @@
   #define FEEDRATE_SCALING                  // Convert XY feedrate from mm/s to degrees/s on the fly
 #endif
 
-// @section machine
+// @section machinupse
 
 // Articulated robot (arm). Joints are directly mapped to axes with no kinematics.
 //#define ARTICULATED_ROBOT_ARM
