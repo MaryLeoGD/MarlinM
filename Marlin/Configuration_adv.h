@@ -498,7 +498,7 @@
 
 // Show Temperature ADC value
 // Enable for M105 to include ADC values read from temperature sensors.
-#define SHOW_TEMP_ADC_VALUES  // mary enable MAX31865
+//#define SHOW_TEMP_ADC_VALUES  // mary enable MAX31865
 
 /**
  * High Temperature Thermistor Support
@@ -518,7 +518,7 @@
 
 // The number of consecutive low temperature errors that can occur
 // before a MINTEMP error is triggered. (Shouldn't be more than 10.)
-#define MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED 10  //mary enable and change value from 0 to 10 MAX31865
+//#define MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED 10  //mary enable and change value from 0 to 10 MAX31865
 
 /**
  * The number of milliseconds a hotend will preheat before starting to check
@@ -527,7 +527,7 @@
  * the minimum temperature your thermistor can read. The lower the better/safer.
  * This shouldn't need to be more than 30 seconds (30000)
  */
-#define PREHEAT_TIME_HOTEND_MS 0   //mary enable by sugestion
+//#define PREHEAT_TIME_HOTEND_MS 0   //mary enable by sugestion
 //#define PREHEAT_TIME_BED_MS 0
 
 // @section extruder
@@ -3829,7 +3829,7 @@
  */
 #define EXTENDED_CAPABILITIES_REPORT
 #if ENABLED(EXTENDED_CAPABILITIES_REPORT)
-  #define M115_GEOMETRY_REPORT  //mary enable MAX31865
+  //#define M115_GEOMETRY_REPORT  //mary enable MAX31865
 #endif
 
 // @section security

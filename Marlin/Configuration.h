@@ -555,7 +555,8 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 -5  //1 to -5 mary change For Max 31865 V2.0 new extruder
+#define TEMP_SENSOR_0 1  //1 to -5 mary change For Max 31865 V2.0 new extruder
+//#define TEMP_SENSOR_0 -5  //1 to -5 mary change For Max 31865 V2.0 new extruder
 #define TEMP_SENSOR_1 0  //0 to -5 mary change For Max 31865 V2.0 new extruder
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -639,7 +640,8 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 520
+#define HEATER_0_MAXTEMP 265
+//#define HEATER_0_MAXTEMP 520  //mary change Max31
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -1103,7 +1105,7 @@
   #define FEEDRATE_SCALING                  // Convert XY feedrate from mm/s to degrees/s on the fly
 #endif
 
-// @section machinupse
+// @section machine
 
 // Articulated robot (arm). Joints are directly mapped to axes with no kinematics.
 //#define ARTICULATED_ROBOT_ARM
@@ -1350,7 +1352,7 @@
  * The probe replaces the Z-MIN endstop and is used for Z homing.
  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
  */
-#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN   //mary desable ver2
 
 // Force the use of the probe for Z-axis homing
 //#define USE_PROBE_FOR_Z_HOMING
@@ -2416,7 +2418,7 @@
  *    P1  Raise the nozzle always to Z-park height.
  *    P2  Raise the nozzle by Z-park amount, limited to Z_MAX_POS.
  */
-#define NOZZLE_PARK_FEATURE //disable mary
+#define NOZZLE_PARK_FEATURE 
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }

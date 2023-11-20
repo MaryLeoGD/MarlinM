@@ -185,19 +185,19 @@
   #define E0_CS_PIN                        P1_04
 #endif
 
-//#define E1_STEP_PIN                        P1_15  //mary desable
-//#define E1_DIR_PIN                         P1_14  //mary desable
-//#define E1_ENABLE_PIN                      P1_16  //mary desable
-//#ifndef E1_CS_PIN                                 //mary desable
-  //#define E1_CS_PIN                        P1_01  //mary desable
-//#endif
+#define E1_STEP_PIN                        P1_15  //mary desable
+#define E1_DIR_PIN                         P1_14  //mary desable
+#define E1_ENABLE_PIN                      P1_16  //mary desable
+#ifndef E1_CS_PIN                                 //mary desable
+  #define E1_CS_PIN                        P1_01  //mary desable
+#endif
 
 
 //MAX31865 MnP  Mary add line
-#define TEMP_0_MISO_PIN                     P0_05  //mary add line
-#define TEMP_0_SCK_PIN                      P0_04  //mary add line
-#define TEMP_0_MOSI_PIN                     P1_17  //mary add line
-#define TEMP_0_CS_PIN                       P1_01  //mary add line
+//#define TEMP_0_MISO_PIN                     P0_05  //mary add line
+//#define TEMP_0_SCK_PIN                      P0_04  //mary add line
+//#define TEMP_0_MOSI_PIN                     P1_17  //mary add line
+//#define TEMP_0_CS_PIN                       P1_01  //mary add line
 
 
 #define TEMP_1_PIN                      P0_23_A0  // A0 (T0) - (67) - TEMP_1_PIN
