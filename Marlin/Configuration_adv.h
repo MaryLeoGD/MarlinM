@@ -68,7 +68,7 @@
  *
  * Set this value to 0 to fail on the first error to occur.
  */
-#define THERMOCOUPLE_MAX_ERRORS 15
+#define THERMOCOUPLE_MAX_ERRORS 15  //mary change from 15 to 20 MAX31865
 
 //
 // Custom Thermistor 1000 parameters
@@ -498,7 +498,7 @@
 
 // Show Temperature ADC value
 // Enable for M105 to include ADC values read from temperature sensors.
-//#define SHOW_TEMP_ADC_VALUES
+#define SHOW_TEMP_ADC_VALUES  // mary enable MAX31865
 
 /**
  * High Temperature Thermistor Support
@@ -518,7 +518,7 @@
 
 // The number of consecutive low temperature errors that can occur
 // before a MINTEMP error is triggered. (Shouldn't be more than 10.)
-//#define MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED 0
+#define MAX_CONSECUTIVE_LOW_TEMPERATURE_ERROR_ALLOWED 10  //mary enable and change value from 0 to 10 MAX31865
 
 /**
  * The number of milliseconds a hotend will preheat before starting to check
@@ -527,7 +527,7 @@
  * the minimum temperature your thermistor can read. The lower the better/safer.
  * This shouldn't need to be more than 30 seconds (30000)
  */
-//#define PREHEAT_TIME_HOTEND_MS 0
+#define PREHEAT_TIME_HOTEND_MS 0   //mary enable by sugestion
 //#define PREHEAT_TIME_BED_MS 0
 
 // @section extruder
@@ -1708,12 +1708,12 @@
   #if ENABLED(POWER_LOSS_RECOVERY)
     #define PLR_ENABLED_DEFAULT   true // Power Loss Recovery enabled by default. (Set with 'M413 Sn' & M500)
     #define BACKUP_POWER_SUPPLY         //enable mary // Backup power / UPS to move the steppers on power loss
-    #define POWER_LOSS_ZRAISE       2  //enable mary // (mm) Z axis raise on resume (on power loss with UPS)
+    #define POWER_LOSS_ZRAISE       10  //enable mary 2mm to 10mm // (mm) Z axis raise on resume (on power loss with UPS)
     #define POWER_LOSS_PIN         P1_00 //enable mary // Pin to detect power loss. Set to -1 to disable default pin on boards without module.
     #define POWER_LOSS_STATE     HIGH //enable mary // State of pin indicating power loss
     #define POWER_LOSS_PULLUP         //enable mary // Set pullup / pulldown as appropriate for your sensor
     //#define POWER_LOSS_PULLDOWN
-    #define POWER_LOSS_PURGE_LEN   15 //enable mary // (mm) Length of filament to purge on resume
+    #define POWER_LOSS_PURGE_LEN   15 //enable mary 20 to 15mm// (mm) Length of filament to purge on resume
     #define POWER_LOSS_RETRACT_LEN 10 //enable mary // (mm) Length of filament to retract on fail. Requires backup power.
 
     // Without a POWER_LOSS_PIN the following option helps reduce wear on the SD card,
@@ -3829,7 +3829,7 @@
  */
 #define EXTENDED_CAPABILITIES_REPORT
 #if ENABLED(EXTENDED_CAPABILITIES_REPORT)
-  //#define M115_GEOMETRY_REPORT
+  #define M115_GEOMETRY_REPORT  //mary enable MAX31865
 #endif
 
 // @section security
