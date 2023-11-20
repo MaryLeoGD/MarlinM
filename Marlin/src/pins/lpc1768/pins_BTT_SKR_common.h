@@ -41,15 +41,15 @@
 //
 // Steppers
 //
-#ifndef E1_STEP_PIN
-  #define E1_STEP_PIN                      P0_01
-#endif
-#ifndef E1_DIR_PIN
-  #define E1_DIR_PIN                       P0_00
-#endif
-#ifndef E1_ENABLE_PIN
-  #define E1_ENABLE_PIN                    P0_10
-#endif
+//#ifndef E1_STEP_PIN                               //mary desable
+ // #define E1_STEP_PIN                      P0_01  //mary desable
+//#endif                                            //mary desable
+//#ifndef E1_DIR_PIN                                //mary desable
+ // #define E1_DIR_PIN                       P0_00  //mary desable
+//#endif                                            //mary desable
+//#ifndef E1_ENABLE_PIN                             //mary desable
+  //#define E1_ENABLE_PIN                    P0_10  //mary desable
+//#endif                                            //mary desable
 
 //
 // Temperature Sensors
