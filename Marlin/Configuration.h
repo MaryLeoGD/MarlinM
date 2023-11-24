@@ -1,10 +1,4 @@
 
-#include <U8glib.h>
-#include <U8glib-HAL.h>
-#include <U8glibPrint.h>
-#include <U8glibPrintable.h>
-
-
 /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -77,7 +71,9 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_MELZI_CREALITY
+   #define MOTHERBOARD BOARD_MELZI
+   //#define MOTHERBOARD BOARD_SANGUINOLOLU_12
+  //#define MOTHERBOARD BOARD_MELZI_CREALITY
 #endif
 
 /**
