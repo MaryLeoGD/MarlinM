@@ -1,6 +1,9 @@
-#include <U8glib.h>
 
 #include <U8glib.h>
+#include <U8glib-HAL.h>
+#include <U8glibPrint.h>
+#include <U8glibPrintable.h>
+
 
 /**
  * Marlin 3D Printer Firmware
